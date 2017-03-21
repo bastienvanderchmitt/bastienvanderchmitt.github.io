@@ -1,10 +1,10 @@
-			
-			
-			
-			
+
+
+
+
 			/* RESPONSIVE DESIGN */
-			
-			
+
+
 @media screen and (max-width: 1024px)
 {
 	#right{float:none !important; margin:auto auto;height:30%;width:30%;}
@@ -19,7 +19,7 @@
 	#separator{display:none}
 	.header {height : 250px;}
 	#top {height : 250px;}
-	
+
 }
 
 @media screen and (max-width: 800px) and (min-width: 400px)
@@ -34,7 +34,7 @@
 	#separator{display:none}
 	.header {height : 200px;}
 	#top {height : 200px;}
-	
+
 }
 
 
@@ -51,16 +51,16 @@
 	.titre3{display:none}
 	.header {height : 150px;}
 	#top {height : 150px;}
-	
+
 }
 
 
 			/* CSS */
 
 
-			
-/* Polices */	
-		
+
+/* Polices */
+
 @font-face {
     font-family: 'Olympic';
     src: url('../polices/OlympicBranding.ttf');
@@ -83,7 +83,7 @@
 
 
 
-/* Header */	
+/* Header */
 
 .header {
 	height : 500px;
@@ -108,7 +108,7 @@
 .titre2{
 	opacity:0.8; filter:alpha(opacity=80);
 }
-	
+
 .titre3{
 	color:white;
 }
@@ -153,7 +153,7 @@ h5{
 
 
 
-/* Contenu */	
+/* Contenu */
 
 #right{
 	float:right;
@@ -166,7 +166,7 @@ h5{
 
 .button {
 -webkit-appearance: none;
-background-color: transparent;
+/*background-color: transparent;*/
 border-width: 0;
 text-align: center;
 box-shadow: 0 0 0;
@@ -199,6 +199,14 @@ body
 	height:70%;
 	width:70%;
 	display:block;
+}
+
+.fa-mobile {
+  font-size: 2em !important;
+}
+
+.fa-phone {
+  font-size: 1.5em !important;
 }
 
 
@@ -381,4 +389,3 @@ body
     -o-animation: fadeInLeftBig 1s; /* Opera < 12.1 */
 	animation: fadeInLeftBig 1s;
 }
-
