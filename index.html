@@ -1,404 +1,313 @@
-<!doctype html>
-<html xml:lang="fr" >
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortFolio | Bastien VDC</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-  	<link rel="stylesheet" href="css/style.css">
-  	<link rel="icon" type="image/png" href="img/favicon.png" />
-    <script src="https://use.fontawesome.com/a7adc1f331.js"></script>
-  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  	<script src="js/jquery.js" type="text/javascript"></script><!-- Insertion de la bibliotheque jQuery -->
-  	<script type="text/javascript" src="js/localscroll/jquery.localscroll.js"></script>
-  	<script type="text/javascript" src="js/localscroll/jquery.scrollTo.js"></script>
-  	<script type="text/javascript" src="js/lancement.js"></script><!-- permet le lancement de la fonction de scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!--  Initialisation  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Bastien Vanderchmitt</title>
+  <link rel="icon" href="img/favicon.ico" />
 
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/set1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/set2.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
+  <!-- Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kanit|Pacifico|Raleway|Rubik+Mono+One" rel="stylesheet">
+</head>
 
-	<div class="header" id="top">
-		<div class="titles">
-			<h1 class="titre1" ><a id="center" href="/">Bastien</a></h1>
-			<h2 class="titre2" ><a id="center"href="/">VANDERCHMITT</a></h2>
-		</div>
-		<div id="separator"></div>
-		<h4 class="titre3">Web Développeur</h4>
-	</div>
+<body>
 
+  <!--  Navbar (Desktop and Mobile)  -->
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <ul class="right hide-on-med-and-down table-of-contents">
+          <li><a href="#acceuil">ACCEUIL</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#a_propos">A PROPOS</a></li>
+          <li><a href="#cv">CURRICULUM VITAE</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav white">
+          <li>
+            <div class="userView">
+              <div class="background">
+                <img src="img/navbar/office.jpg">
+              </div>
+              <a href="#"><img class="circle" src="img/navbar/me.jpg"></a>
+              <a href="#"><span class="white-text name">Vanderchmitt Bastien</span></a>
+              <a href="#"><span class="white-text phone">06 09 92 18 20</span></a>
+              <a href="mailto:bastienvanderchmitt@gmail.com"><span class="white-text email">bastienvanderchmitt@gmail.com</span></a>
+            </div>
+          </li>
+          <div class="table-of-contents">
+            <li><a href="#acceuil">ACCEUIL</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#a_propos">A PROPOS</a></li>
+            <li><a href="#cv">CURRICULUM VITAE</a></li>
+          </div>
+        </ul>
+        <a href="#" data-activates="nav-mobile" id="button-nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
-	<div class="contain-to-grid sticky">
-	  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-			<ul class="title-area">
-				<li class="name">
-					 <h5><a href="#">PORTFOLIO - Bastien</a></h5>
-				</li>
-				<li class="toggle-topbar menu-icon"><a></a>
-				</li>
-			</ul>
-			<section class="top-bar-section">
-				<ul class="right">
-					<li class="divider"></li>
-					<li><a href="#cv">CV</a></li>
-					<li class="divider"></li>
-					<li class="active"><a href="#presentation">PRESENTATION</a></li>
-					<li class="divider"></li>
-					<li><a href="#realisations">REALISATIONS</a></li>
-					<li class="divider"></li>
-				</ul>
-			</section>
-		</nav>
-	</div>
+  <!--  Fixed Button bottom  -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large teal pulse tooltipped" target="_blank" href="assets/cv.pdf" data-position="left" data-delay="50" data-tooltip="Download CV">
+      <i class="large material-icons">attach_file</i>
+    </a>
+  </div>
 
-	<!-- CONTENT AREA -->
-<div class="contentwrapper" id="presentation">
-  <div class="row">
-    <div class="large-4 columns">
-      <img class="photoprofil" id="left" src="img/portrait2.png">
-    </div>
-    <div class="large-8 columns">
-      <h3>Présentation</h3>
-      <div class="row">
-        <div class="large-6 columns text-justify">
-          <p>	Motivé, Curieux et Sérieux.
-				Je suis à la recherche d'un poste
-				dans une entreprise dynamique.
-				Originaire de Nîmes dans le Gard, je vis à
-				Montpellier depuis 2009 pour mes études.
-				Les compétences acquises</p>
+  <!--  Header Section  -->
+  <div id="index-banner" class="parallax-container">
+    <div id="acceuil" class="section no-pad-bot scrollspy">
+      <div class="container">
+        <br><br>
+        <h1 id="header-name" class="header teal-text text-lighten-2 hidden">Vanderchmitt Bastien</h1>
+        <h2><span class="element"></span></h2>
+        <div class="row">
+          <h5 class="header col s12 light"><strong>Web &amp; Mobile</strong></h5>
         </div>
-        <div class="large-6 columns text-justify">
-          <p>	lors de ma formation
-				en Master, alliées à mon expérience chez
-				Gomoob, une start-up Montpelliéraine, sont des atouts
-				qui me permettent de faire face aux imprévus et de
-				m'adapter aux différentes situations.</p>
+        <div class="row">
+          <a id="header-btn" class="waves-effect waves-light btn btn-large" target="_blank" href="assets/cv.pdf" >HIRE ME</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax bg-overlay-effect1"><img src="img/parallax/background6.jpg" class="bg-overlay-effect1" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!--  Portfolio Section  -->
+  <div class="container">
+    <div id="portfolio" class="section scrollspy">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3>Portfolio</h3>
+          <p class="left-align light"></p>
+        </div>
+      </div>
+
+      <div class="row">
+				<div class="grid">
+					<figure id="left-transition1" class="effect-lexi hidden">
+						<img src="img/portfolio/inra.jpg" alt="inra"/>
+						<figcaption>
+							<h2>INRA <span>Montpellier</span></h2>
+							<div>
+								<p>Webdev Ftp Interface graphique</p>
+							</div>
+							<a target="_blank" href="assets/rapport_de_stage_inra.pdf">View more</a>
+						</figcaption>
+					</figure>
+					<figure id="right-transition1" class="effect-dexter hidden">
+						<img src="img/portfolio/previouswebsite.jpg" alt="img22"/>
+						<figcaption>
+							<h2>Site web <span>Personnel</span></h2>
+							<div>
+                <p>Ancienne Version Bootstrap Curriculum Vitae</p>
+							</div>
+							<a target="_blank" href="old/index.html">View more</a>
+						</figcaption>
+					</figure>
+          <figure id="left-transition2" class="effect-apollo hidden">
+						<img src="img/portfolio/amedevoyageur.jpg" alt="img18"/>
+						<figcaption>
+							<h2>Ame de <span>Voyageur</span></h2>
+							<p>Statique Anglais Bijouterie Nouvelle-Zélande</p>
+							<a target="_blank" href="http://www.uneamedevoyageur.com">View more</a>
+						</figcaption>
+					</figure>
+					<figure id="right-transition2" class="effect-marley hidden">
+						<img src="img/portfolio/verygoodmoment.jpg" alt="img22"/>
+						<figcaption>
+							<h2>VERYGOOD <span>MOMENT</span></h2>
+              <p>Start-up Web et Mobile Cordova Marionette Backbone Node</p>
+							<a target="_blank" href="http://www.verygoodmoment.com">View more</a>
+						</figcaption>
+					</figure>
+				</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  Parallax Section 'About'  -->
+  <div class="parallax-container valign-wrapper">
+    <div id="a_propos" class="section no-pad-bot scrollspy">
+      <div class="container">
+        <div id="about-transition" class="row center hidden">
+          <h3 class="header col s12 light">A Propos</h3>
+          <p class="col s12 light large-text">Motivé, Curieux et Sérieux</p>
+          <div class="col s3 light"></div><div class="divider col s6 light"></div><div class="col s3 light"></div>
+          <p class="col s12 light large-text minify-text-mobile">Je suis à la recherche d'un poste dans une entreprise dynamique. Les compétences acquises lors de ma formation en Master, alliées à mon expérience chez Gomoob, une start-up Montpelliéraine, sont des atouts qui me permettent de faire face aux imprévus et de m'adapter aux différentes situations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax bg-overlay-effect2"><img src="img/parallax/background7.jpg" class="bg-overlay-effect1" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!--  Timeline Section 'Curriculum Vitae'  -->
+  <div class="container">
+    <div id="cv" class="section scrollspy">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3>Curriculum Vitae</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="timeline">
+            <li>
+              <div id="timeline-image-1" class="timeline-image hidden">
+                  <img class="circle responsive-img" src="img/timeline/1.png" alt="">
+              </div>
+              <div id="timeline-panel-1" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>2015-2016</h4>
+                  <h4 class="subheading">Développeur web - Full Stack</h4>
+                </div>
+                <div class="chip"><a target="_blank" href="https://www.gomoob.com/">Gomoob</a><i class="close material-icons">perm_identity</i></div>
+                <div class="chip">Montpellier<i class="close material-icons">location_on</i></div>
+                <div class="chip">CDD<i class="close material-icons">av_timer</i></div>
+                <div class="timeline-body">
+                    <p class="text-muted">Réalisation d'applications web et mobiles telles que verygoodmoment. Technologies Utilisées : Cordova, API REST, Backbone, Marionette, Node, Jira, Jenkins, Bower, Grunt, PhpUnit</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div id="timeline-image-2" class="timeline-image hidden">
+                <img class="circle responsive-img" src="img/timeline/2.jpg" alt="">
+              </div>
+              <div id="timeline-panel-2" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>Avril 2011</h4>
+                  <h4 class="subheading">Développeur web</h4>
+                </div>
+                <div class="chip"><a target="_blank" href="http://www.avignon.inra.fr/">INRA</a><i class="close material-icons">perm_identity</i></div>
+                <div class="chip">Avignon<i class="close material-icons">location_on</i></div>
+                <div class="chip">Stage<i class="close material-icons">av_timer</i></div>
+                <div class="timeline-body">
+                  <p class="text-muted">Interface web pour acquisitions de données en temps réel (métriques pour mesurer comment respirent les plantes). Technologies Utilisées : WebDev, Ftp, Ldap</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="timeline-image-3" class="timeline-image hidden">
+                <img class="circle responsive-img" src="img/timeline/3.jpg" alt="">
+              </div>
+              <div id="timeline-panel-3" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>2012-2014</h4>
+                  <h4 class="subheading">Employé polyvalent</h4>
+                </div>
+                <div class="chip"><a target="_blank" href="https://pizza.dominos.fr/">Domino's Pizza</a><i class="close material-icons">perm_identity</i></div>
+                <div class="chip">Montpellier<i class="close material-icons">location_on</i></div>
+                <div class="chip">CDI<i class="close material-icons">av_timer</i></div>
+                <div class="timeline-body">
+                  <p class="text-muted">Livraisons, fabrication et prise de commandes. Parallèlement aux études.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div id="timeline-image-4" class="timeline-image hidden">
+                <img class="circle responsive-img" src="img/timeline/4.jpg" alt="">
+              </div>
+              <div id="timeline-panel-4" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>Autres</h4>
+                  <h4 class="subheading">Intérimaire et Expériences de vie</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Déménagements, Usine, Vendeur itinérant. Un an en Nouvelle-Zélande (Anglais courant).</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div id="timeline-image-5" class="timeline-image hidden pacifico">
+                <h4>Be Part
+                <br>Of My
+                <br>Story !</h4>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-	</div>
 
-
-  <div class="row">
-    <div class="large-8 columns text-justify">
-      <h3>A Propos</h3>
-		  <p>Ce portefolio est une vitrine de mes compétences. Vous y retrouverez mon Curriculum Vitae ainsi que les principaux projets que j'ai réalisés.
-		  Vous me connaîtrez donc un peu mieux à la fin de la lecture ! N'hésitez pas à me contacter à l'adresse suivante : <a href="mailto:bastienvanderchmitt@gmail.com">bastienvanderchmitt@gmail.com</a></p>
-    </div>
-    <div class="large-4 columns">
-      <img class="photoprofil" id="right" src="img/img7.png">
-    </div>
-  </div>
-
-
-	<div class="panel" id="realisations">
-		<div class="contentwrapper">
-			<h1>Réalisations</h1>
-			 <div class="row">
-				<div class="large-4 columns text-justify">
-				  <img class="imgcenter" src="img/network.png"/>
-				  <h3>Stage INRA</h3>
-				  <p>J'ai réalisé mon stage de fin d'études de l'IUT à l'INRA (Institut National de Recherche Agronomique). J'ai conçu un site web
-				  qui permet de contrôler l'acquisition de données d'une machine construite par les chercheurs qui mesure comment "respire" un fruit ou un légume.
-				  Pour ce faire, j'ai utilisé le framework WebDev et le protocole FTP afin de connecter les deux entités.
-				  <a href="rapport_de_stage_inra.pdf">Rapport de Stage</a>
-				  </p>
-				</div>
-
-				<div class="large-4 columns text-justify">
-				  <img  class="imgcenter" src="img/laptop.png"/>
-				  <h3>Very Good Moment</h3>
-				  <p>A la fin de mes études, la start-up Gomoob dans laquelle j'ai fait un dernier stage m'a embauché.
-            J'ai ainsi contribué au développement d'une jeune entreprise, en aidant à la maintenance
-            de cette plateforme organisatrice d'évènements entre particuliers et grandes marque de consommation.
-            Lors de cette période j'ai eu la chance d'utiliser de nombreaux outils de gestion de projet,
-            et de découvrir de nouvelles technologies web.
-				        <a href="http://www.verygoodmoment.com">Very Good Moment</a>
-                et <a href="rapport_de_stage_gomoob.pdf">Rapport de Stage GOMOOB</a>
-				  </p>
-				</div>
-
-				<div class="large-4 columns text-justify">
-				  <img class="imgcenter" src="img/diamond.png"/>
-				  <h3>Âme De Voyageur</h3>
-				  <p>Ce site web responsive est une de mes créations personnelles.
-				  Je l'ai réalisé dans le cadre de mon voyage en Nouvelle-Zélande d'un an.
-				  C'est un site vitrine fait pour une cliente Anglaise qui désirait plus de visibilité pour ses créations de bijouterie.
-				  N'hésitez pas à aller y faire un tour : <a href="http://www.uneamedevoyageur.com">Âme de Voyageur</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="contentwrapper" id="cv">
-	<h1>Curriculum Vitae</h1>
-
-	<div class="row">
-
-	 <div class="large-6 columns">
-	  <h3>Expériences</h3>
-		<div class="panel">
-
-      <div class="row">
-        <div class="large-2 columns"><img class="resizesmall" src="img/gomoob.png"/></div>
-          <div class="large-10 columns">
-            <p><strong>Developpeur web - Full Stack</strong></br> Réalisation d'applications web et mobiles.</br>Technologies Utilisées : Cordova, API REST.</p>
-          <div class="wraplinks">
-            <ul class="inline-list">
-            <li><a href="https://www.gomoob.com/">GOMOOB</a></li>
-            <li><a href="http://www.montpellier.fr/">Montpellier</a></li>
-            <li><a href="">2015/2016</a></li>
-            <li><a href="">CDD</a></li>
-            </ul>
+  <!--  Parallax Section 'Skills'  -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <div class="col s12 center">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn btn-large" href="#modal">Compétences</a>
           </div>
         </div>
       </div>
-
-      <hr/>
-
-			<div class="row">
-				<div class="large-2 columns"><img class="resizesmall" src="img/inra.jpg"/></div>
-					<div class="large-10 columns">
-					  <p><strong>Developpeur web</strong></br> Interface web pour acquisitions de données en temps réel.</br>Technologies Utilisées : WebDev, Ftp.</p>
-					<div class="wraplinks">
-					  <ul class="inline-list">
-						<li><a href="http://www.avignon.inra.fr/">INRA</a></li>
-						<li><a href="https://fr.wikipedia.org/wiki/Avignon">Avignon</a></li>
-						<li><a href="">Avril/Juillet 2011</a></li>
-						<li><a href="">Stage</a></li>
-					  </ul>
-					</div>
-				</div>
-			</div>
-
-		  <hr/>
-
-		  <div class="row">
-			<div class="large-2 columns"><img class="resizesmall" src="img/dominos.jpg"/></div>
-			<div class="large-10 columns">
-			  <p><strong>Employé polyvalent</strong></br> Livraisons, fabrication et prise de commandes.</br>Parallèlement aux études</p>
-			  <ul class="inline-list">
-				<li><a href="https://pizza.dominos.fr/">Domino's</a></li>
-				<li><a href="http://www.montpellier.fr/">Montpellier</a></li>
-				<li><a href="">2012-2014</a></li>
-				<li><a href="">CDI</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-		  <hr/>
-
-		  <div class="row">
-			<div class="large-2 columns"><img class="resizesmall" src="img/manpower.jpg"/></div>
-			<div class="large-10 columns">
-			  <p><strong>Intérimaire</strong></br> Déménagements</br>Usine</br>Vendeur itinérant</p>
-			  <ul class="inline-list">
-				<li><a href="http://www.manpower.fr/">Man Power</a></li>
-				<li><a href="">France</a></li>
-				<li><a href="">2009-2011</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-		</div>
     </div>
-
-
-    <div class="large-6 columns">
-	  <h3>Formations</h3>
-		<div class="panel">
-			<div class="row">
-				<div class="large-12 columns">
-				  <p><strong>Master Informatique</strong></br>Cursus AIGLE, master orienté applications mobiles et technologies du web</p>
-				  <ul class="inline-list">
-					<li><a href="http://www.umontpellier.fr/">UM2</a></li>
-					<li><a href="http://www.montpellier.fr/">Montpellier</a></li>
-					<li><a href="">Depuis 2012</a></li>
-				  </ul>
-				</div>
-			</div>
-
-			<hr/>
-
-		  <div class="row">
-			<div class="large-12 columns">
-			  <p><strong>Licence Informatique</strong></br>Cursus général</p>
-			  <ul class="inline-list">
-				<li><a href="http://www.umontpellier.fr/">UM2</a></li>
-				<li><a href="http://www.montpellier.fr/">Montpellier</a></li>
-				<li><a href="">2011-2012</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-		  <hr/>
-
-		  <div class="row">
-			<div class="large-12 columns">
-			  <p><strong>DUT Informatique</strong></br></p>
-			  <ul class="inline-list">
-				<li><a href="http://www.iutmontp.univ-montp2.fr/">IUT</a></li>
-				<li><a href="http://www.montpellier.fr/">Montpellier</a></li>
-				<li><a href="">2009-2011</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-
-		  <hr/>
-
-		  <div class="row">
-			<div class="large-12 columns">
-			  <p><strong>BAC Scientifique</strong></br></p>
-			  <ul class="inline-list">
-				<li><a href="https://www.lyc-camus-nimes.ac-montpellier.fr/">Lycée Albert Camus</a></li>
-				<li><a href="https://www.nimes.fr/">Nîmes</a></li>
-				<li><a href="">2006-2009</a></li>
-			  </ul>
-			</div>
-		  </div>
-
-	  </div>
-    <div class="row">
-    <div class="large-12 columns text-center">
-      <p><strong>CV disponible en version pdf :</strong></br></p>
-      <a href="cv.pdf" class="button">Télécharger</a>
-    </div>
-    </div>
-	  </div>
-
-	 </div>
-
-
-	 <div class="row">
-
-	  <div class="large-4 columns">
-	  <h3>Compétences</h3>
-		  <div class="panel">
-			<div class="row">
-				<div class="large-12 columns">
-				  <p><strong>Languages</strong></br>PHP, CSS, Java, SQL, XML, Javascript</p><strong>Frameworks web</strong>
-				  <ul class="inline-list">
-					<li><a href="https://www.pcsoft.fr/webdev/">Webdev</a></li>
-					<li><a href="https://symfony.com/">Symfony</a></li>
-          <li><a href="https://angularjs.org/">AngularJS</a></li>
-          <li><a href="https://cordova.apache.org/">Cordova</a></li>
-				  </ul>
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="large-12 columns">
-				  <p><strong>Autres</strong></br>Travail en équipe, Expérience monde du travail, outils de gestion</p>
-				  <ul class="inline-list">
-					<li><a href="https://github.com">Github</a></li>
-          <li><a href="http://www.agiliste.fr/introduction-methodes-agiles/">Méthode SCRUM</a></li>
-          <li><a href="https://fr.wikipedia.org/wiki/Representational_state_transfer">API REST</a></li>
-					<li><a href="https://www.zendesk.fr">ZenDesk</a></li
-				  </ul>
-				</div>
-			</div>
-		  </div>
-	  </div>
-
-
-
-
-
-	  <div class="large-4 columns">
-		  <h3>Contact</h3>
-		  <div class="panel">
-			  <div class="row">
-				<div class="large-2 columns"><i class="fa fa-phone" aria-hidden="true"></i></div>
-				<div class="large-10 columns">
-				  <p>04 66 01 28 20</p>
-				</div>
-			  </div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="large-2 columns"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-				<div class="large-10 columns">
-				  <p>06 09 92 18 20</p>
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="large-2 columns"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-				<div class="large-10 columns">
-				  <p>bastienvanderchmitt@gmail.com</p>
-				</div>
-			  </div>
-			</div>
-		</div>
-
-
-
-	    <div class="large-4 columns">
-		  <h3>Loisirs</h3>
-		  <div class="panel">
-			<div class="row">
-				<div class="large-12 columns">
-				  <p>Musique, Voyages, Sports (ski, tennis, volley-ball)</p>
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="large-12 columns">
-				  <p>Possède les permis A et B</p>
-				</div>
-			</div>
-		  </div>
-		</div>
-      </div>
-
-	</div>
+    <div class="parallax bg-overlay-effect1"><img src="img/parallax/background8.jpg" class="bg-overlay-effect1" alt="Unsplashed background img 3"></div>
   </div>
 
-</div>
-
-
-<!-- FOOTER AREA -->
-<div class="full-width footer-area">
-    <div class="row">
-        <div class="large-12 columns">
-            &copy; 2017
-        </div>
+  <!--  Modal Window  -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3>Compétences</h3>
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="img/modal/code.svg" alt="" class="circle">
+          <span class="title">Languages</span>
+          <p>
+            PHP  -  CSS  -  Html  -
+             Javascript  -  SQL  -  XML  -  Java
+          </p>
+          <a href="#!" class="secondary-content hide-on-small-only"><i class="material-icons">code</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="img/modal/code.png" alt="" class="circle">
+          <span class="title">Frameworks</span>
+          <p>
+            Webdev  -  Symfony  -  AngularJS  -  Cordova
+          </p>
+          <a href="#!" class="secondary-content hide-on-small-only"><i class="material-icons">thumb_up</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="img/modal/user.png" alt="" class="circle">
+          <span class="title">Autres</span>
+          <p>API REST  -  Responsive Design  -  SCRUM  -  Github  -  Grunt  -  Jira  -  Bower</p>
+          <a href="#!" class="secondary-content hide-on-small-only"><i class="material-icons">grade</i></a>
+        </li>
+      </ul>
     </div>
-</div>
+  </div>
+
+  <!--  Footer  -->
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container">
+        Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
 
 
+  <!--  Scripts  -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/transitions.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/customTyped.js"></script>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-  	  // When the Document Object Model is ready
-  		jQuery(document).ready(function(){
-    		// 'catTopPosition' is the amount of pixels #cat
-    		// is from the top of the document
-    		var catTopPosition = jQuery('#cat').offset().top;
-
-    		// When #scroll is clicked
-    		jQuery('#scroll').click(function(){
-    			// Scroll down to 'catTopPosition'
-    			jQuery('html, body').animate({scrollTop:catTopPosition}, 'slow');
-    			// Stop the link from acting like a normal anchor link
-    			return false;
-    		});
-    	});
-    </script>
   </body>
 </html>
