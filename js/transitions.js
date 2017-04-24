@@ -20,12 +20,12 @@
          $(el).removeClass("hidden");
        }
       },
-      {selector: '#left-transition2', offset: 100, callback: function(el) {
+      {selector: '#left-transition2', offset: 50, callback: function(el) {
          $(el).animateCss('fadeInLeftBig');
          $(el).removeClass("hidden");
        }
       },
-      {selector: '#right-transition2', offset: 100, callback: function(el) {
+      {selector: '#right-transition2', offset: 50, callback: function(el) {
          $(el).animateCss('fadeInRightBig');
          $(el).removeClass("hidden");
        }
