@@ -1,13 +1,15 @@
 $(function(){
+
   var cpt=1;
+
   const FONT_1 = "Roboto";
-  const FONT_2 = "Rubik Mono One";
+  const FONT_2 = "Kanit";
   const FONT_3 = "Gloria Hallelujah";
   const FONT_4 = "Raleway";
   const FONT_5 = "Pacifico";
 
   $(".element").typed({
-    strings: [ "Hello, I'm Bastien", "I Love to Develop.", "I am Creative.", "I Love Design.", "I am Developer." ],
+    strings: [ "Hi there !", "Who am I ?", "I am Creative", "I Love Design ...", "I am Developer." ],
     typeSpeed: 50,
     startDelay: 1000,
     loop: false,

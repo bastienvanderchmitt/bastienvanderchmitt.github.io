@@ -8,21 +8,22 @@
   <title>Bastien Vanderchmitt</title>
   <link rel="icon" href="img/favicon.ico" />
 
-  <script src="js/pace.js"></script>
-  <link href="css/pace.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <script src="js/pace.js"></script>
+  <link href="css/pace.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!-- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/set1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/set2.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <!-- Fonts  -->
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kanit|Pacifico|Raleway|Rubik+Mono+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kanit|Pacifico|Raleway|Kufam|Shadows+Into+Light" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -69,14 +70,14 @@
   </div>
 
   <!--  Header Section  -->
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container z-depth-2">
     <div id="acceuil" class="section no-pad-bot scrollspy">
-      <div class="container">
+      <div class="container center">
         <br><br>
-        <h1 id="header-name" class="header teal-text text-lighten-2 hidden">Vanderchmitt Bastien</h1>
+        <h1 id="header-name" class="header teal-text text-lighten-2 hidden">VANDERCHMITT Bastien</h1>
         <h2><span class="element"></span></h2>
         <div class="row">
-          <h5 class="header col s12 light"><strong>Web &amp; Mobile</strong></h5>
+          <h5 class="header col s12 light" id="other"><strong>Web &amp; Mobile</strong></h5>
         </div>
         <div class="row">
           <a id="header-btn" class="waves-effect waves-light btn btn-large" target="_blank" href="assets/cv.pdf" >HIRE ME</a>
@@ -84,7 +85,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax bg-overlay-effect1"><img src="img/parallax/background6.jpg" class="bg-overlay-effect1" alt="Unsplashed background img 1"></div>
+    <div class="parallax bg-overlay-effect1" id="header-bg"><img src="img/parallax/background6.jpg" class="bg-overlay-effect1" alt="Unsplashed background img 1"></div>
   </div>
 
   <!--  Portfolio Section  -->
@@ -100,40 +101,40 @@
 
       <div class="row">
 				<div class="grid">
-					<figure id="left-transition1" class="effect-lexi hidden">
-						<img src="img/portfolio/inra.jpg" alt="inra"/>
+					<figure id="left-transition1" class="effect-lexi hidden z-depth-4">
+						<img src="img/portfolio/marietta.jpg" alt="inra"/>
 						<figcaption>
-							<h2>INRA <span>Montpellier</span></h2>
+							<h2>Site <span>Vitrine</span></h2>
 							<div>
-								<p>Webdev Ftp Interface graphique</p>
+								<p>Site personnel Avocate Montpellier Prise de rdv</p>
 							</div>
-							<a target="_blank" href="assets/rapport_de_stage_inra.pdf">View more</a>
+							<a target="_blank" href="http://www.mtodorova.fr/">View more</a>
 						</figcaption>
 					</figure>
-					<figure id="right-transition1" class="effect-dexter hidden">
-						<img src="img/portfolio/previouswebsite.jpg" alt="img22"/>
+					<figure id="right-transition1" class="effect-dexter hidden z-depth-4">
+						<img src="img/portfolio/specialTT.jpg" alt="specialT"/>
 						<figcaption>
-							<h2>Site web <span>Personnel</span></h2>
+							<h2><span>SpecialT</span> <span>Nestle</h2>
 							<div>
-                <p>Ancienne Version Bootstrap Curriculum Vitae</p>
+                <p>Développement et migration vers Magento 2 de la plateforme e-commerce Spécial.T</p>
 							</div>
-							<a target="_blank" href="old/index.html">View more</a>
+							<a target="_blank" href="https://fr.special-t.com/fr">View more</a>
 						</figcaption>
 					</figure>
-          <figure id="left-transition2" class="effect-apollo hidden">
-						<img src="img/portfolio/amedevoyageur.jpg" alt="img18"/>
+          <figure id="left-transition2" class="effect-apollo hidden z-depth-4">
+						<img src="img/portfolio/amedevoyageur.jpg" alt="amedevoyageur"/>
 						<figcaption>
 							<h2>Ame de <span>Voyageur</span></h2>
 							<p>Statique Anglais Bijouterie Nouvelle-Zélande</p>
 							<a target="_blank" href="http://www.uneamedevoyageur.com">View more</a>
 						</figcaption>
 					</figure>
-					<figure id="right-transition2" class="effect-marley hidden">
-						<img src="img/portfolio/verygoodmoment.jpg" alt="img22"/>
+					<figure id="right-transition2" class="effect-marley hidden z-depth-4">
+						<img src="img/portfolio/pauleka.jpg" alt="PauleKa"/>
 						<figcaption>
-							<h2>VERYGOOD <span>MOMENT</span></h2>
-              <p>Start-up Web et Mobile Cordova Marionette Backbone Node</p>
-							<a target="_blank" href="http://www.verygoodmoment.com">View more</a>
+							<h2><span>PAULEKA</span><br>Luxe</h2>
+              <p>Maintenance applicative et mise en ligne de collections, gestion de projet</p>
+							<a target="_blank" href="https://www.pauleka.com/fr_fr">View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -143,14 +144,14 @@
   </div>
 
   <!--  Parallax Section 'About'  -->
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper z-depth-2">
     <div id="a_propos" class="section no-pad-bot scrollspy">
       <div class="container">
         <div id="about-transition" class="row center hidden">
           <h3 class="header col s12 light">A Propos</h3>
-          <p class="col s12 light large-text">Motivé, Curieux et Sérieux</p>
+          <p class="col s12 light large-text under">Motivé, Curieux et Sérieux</p>
           <div class="col s3 light"></div><div class="divider col s6 light"></div><div class="col s3 light"></div>
-          <p class="col s12 light large-text minify-text-mobile">Je suis à la recherche d'un poste dans une entreprise dynamique. Les compétences acquises lors de ma formation en Master, alliées à mon expérience chez Gomoob, une start-up Montpelliéraine, sont des atouts qui me permettent de faire face aux imprévus et de m'adapter aux différentes situations.</p>
+          <p class="col s12 light large-text minify-text-mobile">Je suis à la recherche d'un poste dans une entreprise dynamique. Les compétences acquises lors de ma formation en Master, alliées à mon expérience chez toHero, une start-up Montpelliéraine, sont des atouts qui me permettent de faire face aux imprévus et de m'adapter aux différentes situations.</p>
         </div>
       </div>
     </div>
@@ -172,26 +173,9 @@
           <ul class="timeline">
             <li>
               <div id="timeline-image-1" class="timeline-image hidden">
-                  <img class="circle responsive-img" src="img/timeline/1.png" alt="">
+                <img class="circle responsive-img" src="img/timeline/1.jpg" alt="inra">
               </div>
               <div id="timeline-panel-1" class="timeline-panel hidden">
-                <div class="timeline-heading">
-                  <h4>2015-2016</h4>
-                  <h4 class="subheading">Développeur web - Full Stack</h4>
-                </div>
-                <div class="chip"><a target="_blank" href="https://www.gomoob.com/">Gomoob</a><i class="close material-icons">perm_identity</i></div>
-                <div class="chip">Montpellier<i class="close material-icons">location_on</i></div>
-                <div class="chip">CDD<i class="close material-icons">av_timer</i></div>
-                <div class="timeline-body">
-                    <p class="text-muted">Réalisation d'applications web et mobiles telles que verygoodmoment. Technologies Utilisées : Cordova, API REST, Backbone, Marionette, Node, Jira, Jenkins, Bower, Grunt, PhpUnit</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div id="timeline-image-2" class="timeline-image hidden">
-                <img class="circle responsive-img" src="img/timeline/2.jpg" alt="">
-              </div>
-              <div id="timeline-panel-2" class="timeline-panel hidden">
                 <div class="timeline-heading">
                   <h4>Avril 2011</h4>
                   <h4 class="subheading">Développeur web</h4>
@@ -204,11 +188,11 @@
                 </div>
               </div>
             </li>
-            <li>
-              <div id="timeline-image-3" class="timeline-image hidden">
-                <img class="circle responsive-img" src="img/timeline/3.jpg" alt="">
+            <li class="timeline-inverted">
+              <div id="timeline-image-2" class="timeline-image hidden">
+                <img class="circle responsive-img" src="img/timeline/2.jpg" alt="dominos">
               </div>
-              <div id="timeline-panel-3" class="timeline-panel hidden">
+              <div id="timeline-panel-2" class="timeline-panel hidden">
                 <div class="timeline-heading">
                   <h4>2012-2014</h4>
                   <h4 class="subheading">Employé polyvalent</h4>
@@ -221,22 +205,56 @@
                 </div>
               </div>
             </li>
+            <li>
+              <div id="timeline-image-3" class="timeline-image hidden">
+                  <img class="circle responsive-img" src="img/timeline/3.png" alt="">
+              </div>
+              <div id="timeline-panel-3" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>2014-2015</h4>
+                  <h4 class="subheading">Développeur web - Full Stack</h4>
+                </div>
+                <div class="chip"><a target="_blank" href="https://www.gomoob.com/">Gomoob</a><i class="close material-icons">perm_identity</i></div>
+                <div class="chip">Montpellier<i class="close material-icons">location_on</i></div>
+                <div class="chip">CDD<i class="close material-icons">av_timer</i></div>
+                <div class="timeline-body">
+                    <p class="text-muted">Réalisation d'applications web et mobiles telles que verygoodmoment. Technologies Utilisées : Cordova, API REST, Backbone, Marionette, Node, Jira, Jenkins, Bower, Grunt, PhpUnit</p>
+                </div>
+              </div>
+            </li>
             <li class="timeline-inverted">
               <div id="timeline-image-4" class="timeline-image hidden">
-                <img class="circle responsive-img" src="img/timeline/4.jpg" alt="">
+                <img class="circle responsive-img" src="img/timeline/4.png" alt="">
               </div>
               <div id="timeline-panel-4" class="timeline-panel hidden">
+                <div class="timeline-heading">
+                  <h4>2016-2020</h4>
+                  <h4 class="subheading">Développeur Magento</h4>
+                </div>
+                <div class="chip"><a target="_blank" href="https://www.tohero.fr/">toHero</a><i class="close material-icons">perm_identity</i></div>
+                <div class="chip">Montpellier<i class="close material-icons">location_on</i></div>
+                <div class="chip">CDI<i class="close material-icons">av_timer</i></div>
+                <div class="timeline-body">
+                  <p class="text-muted">Lead développeur Magento 1 & 2 et gestion de projet. Gros comptes : Nestlé, PauleKa, Jardiland, Funbooker (Symfony), Pierre Hermé ... </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="timeline-image-5" class="timeline-image hidden">
+                <img class="circle responsive-img" src="img/timeline/5.jpg" alt="">
+              </div>
+              <div id="timeline-panel-5" class="timeline-panel hidden">
                 <div class="timeline-heading">
                   <h4>Autres</h4>
                   <h4 class="subheading">Intérimaire et Expériences de vie</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Déménagements, Usine, Vendeur itinérant. Un an en Nouvelle-Zélande (Anglais courant).</p>
+                  <p class="text-muted">Déménagements, Usine, Vendeur itinérant. Un an en Nouvelle-Zélande et 6 mois au Canada (Anglais courant).</p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
-              <div id="timeline-image-5" class="timeline-image hidden pacifico">
+              <div id="timeline-image-6" class="timeline-image hidden pacifico">
                 <h4>Be Part
                 <br>Of My
                 <br>Story !</h4>
@@ -249,7 +267,7 @@
   </div>
 
   <!--  Parallax Section 'Skills'  -->
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper z-depth-2">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -281,14 +299,14 @@
           <img src="img/modal/code.png" alt="" class="circle">
           <span class="title">Frameworks</span>
           <p>
-            Webdev  -  Symfony  -  AngularJS  -  Cordova
+            Magento  -  Symfony  -  Webdev  -  Cordova
           </p>
           <a href="#!" class="secondary-content hide-on-small-only"><i class="material-icons">thumb_up</i></a>
         </li>
         <li class="collection-item avatar">
           <img src="img/modal/user.png" alt="" class="circle">
           <span class="title">Autres</span>
-          <p>API REST  -  Responsive Design  -  SCRUM  -  Github  -  Grunt  -  Jira  -  Bower</p>
+          <p>API REST  -  Linux  -  Responsive Design  -  SCRUM  -  Github  -  Grunt  -  Bower</p>
           <a href="#!" class="secondary-content hide-on-small-only"><i class="material-icons">grade</i></a>
         </li>
       </ul>
@@ -308,11 +326,11 @@
   <!--  Scripts  -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
-  <script src="js/init.min.js"></script>
-  <!-- <script src="js/init.js"></script>
+  <!-- <script src="js/init.min.js"></script> -->
+  <script src="js/init.js"></script>
   <script src="js/transitions.js"></script>
   <script src="js/typed.js"></script>
-  <script src="js/customTyped.js"></script> -->
+  <script src="js/customTyped.js"></script>
 
   </body>
 </html>

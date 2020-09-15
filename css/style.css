@@ -127,7 +127,11 @@ p {
 }
 
 #header-name {
-  font-family: "Kanit";
+  font-family: Shadows Into Light, serif;
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 @media only screen and (min-width : 600px) {
@@ -170,4 +174,30 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+#about-transition .header {
+  font-family: Shadows Into Light, serif;
+  font-weight: bold;
+  color:#4a148c !important;
+}
+
+#about-transition .divider {
+  background-color: #ffd54f !important;
+}
+
+#about-transition .under {
+  color: white !important;
+  font-family: Shadows Into Light, serif;
+  font-weight: bold;
+}
+
+#about-transition .minify-text-mobile {
+  color: #9c27b0 !important;
+  font-family: Shadows Into Light, serif;
+  font-weight: bold;
 }

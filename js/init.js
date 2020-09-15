@@ -25,3 +25,19 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+window.onload = function() {
+  let btn = document.getElementById("header-btn");
+  let background = document.getElementById("header-bg");
+  let other = document.getElementById("other");
+
+  btn.onmouseover = function() {
+      background.style.opacity = "0.3";
+      other.style.color = "#e040fb";
+  }
+
+  btn.onmouseout = function() {
+      background.style.opacity = "0.6";
+      other.style.color = "white";
+  }
+}

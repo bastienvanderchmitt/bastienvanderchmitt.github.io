@@ -80,6 +80,16 @@
          $(el).removeClass("hidden");
        }
       },
+      {selector: '#timeline-panel-5', offset: 200, callback: function(el) {
+         $(el).animateCss('zoomIn');
+         $(el).removeClass("hidden");
+       }
+      },
+      {selector: '#timeline-image-6', offset: 200, callback: function(el) {
+         $(el).animateCss('zoomIn');
+         $(el).removeClass("hidden");
+       }
+      },
       {selector: '#header-name', offset: 200, callback: function(el) {
          $(el).animateCss('flipInX');
          $(el).removeClass("hidden");
