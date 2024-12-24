@@ -90,6 +90,21 @@
          $(el).removeClass("hidden");
        }
       },
+      {selector: '#timeline-panel-6', offset: 200, callback: function(el) {
+              $(el).animateCss('zoomIn');
+              $(el).removeClass("hidden");
+          }
+      },
+      {selector: '#timeline-image-7', offset: 200, callback: function(el) {
+              $(el).animateCss('zoomIn');
+              $(el).removeClass("hidden");
+          }
+      },
+      {selector: '#timeline-panel-7', offset: 200, callback: function(el) {
+              $(el).animateCss('zoomIn');
+              $(el).removeClass("hidden");
+          }
+      },
       {selector: '#header-name', offset: 200, callback: function(el) {
          $(el).animateCss('flipInX');
          $(el).removeClass("hidden");
