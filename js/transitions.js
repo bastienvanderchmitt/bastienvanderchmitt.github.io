@@ -30,6 +30,16 @@
          $(el).removeClass("hidden");
        }
       },
+      {selector: '#left-transition3', offset: 50, callback: function(el) {
+         $(el).animateCss('fadeInLeftBig');
+         $(el).removeClass("hidden");
+       }
+      },
+      {selector: '#right-transition3', offset: 50, callback: function(el) {
+         $(el).animateCss('fadeInRightBig');
+         $(el).removeClass("hidden");
+       }
+      },
       {selector: '#about-transition', offset: 200, callback: function(el) {
          $(el).animateCss('zoomIn');
          $(el).removeClass("hidden");
